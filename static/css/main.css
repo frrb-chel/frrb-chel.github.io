@@ -2,6 +2,25 @@
     box-shadow: 0 0px 6px #333;
 }
 
+h1,h2,h3 {
+    line-height: 40px;
+}
+
+body {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 18px;
+}
+
 .content {
     margin-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+#slider {
+    margin-top: -85px;
 }

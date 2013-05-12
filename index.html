@@ -5,61 +5,75 @@ title: Федерация русского рукопашного боя Чел�
 <script type="text/javascript" src="/static/js/jquery.slitslider.js"></script>
 <script type="text/javascript" src="/static/js/jquery.ba-cond.min.js"></script>
 
-<div class="row">
     <div id="slider" class="sl-slider-wrapper">
         <div class="sl-slider">
             <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
                 <div class="sl-slide-inner">
                     <div class="bg-img bg-img-1"></div>
-                    <h2>A bene placito.</h2>
-                    <blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
+                    <h2>Силовая подготовка в зале</h2>
+                    <blockquote><p>Основные занятия проводятся в спортивном зале. В зале проще изучить что-то новое, не отвлекают внешние факторы. А после тренировки - на турник и брусья.</p></blockquote>
                 </div>
             </div>
             
             <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
                 <div class="sl-slide-inner">
                     <div class="bg-img bg-img-2"></div>
-                    <h2>Regula aurea.</h2>
-                    <blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
+                    <h2>Спарринги против нескольких противников</h2>
+                    <blockquote><p>У противника могут и должны быть друзья. Важно тренировать своё внимание для боя против нескольких человек одновременно.</p></blockquote>
                 </div>
             </div>
             
             <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
                 <div class="sl-slide-inner">
                     <div class="bg-img bg-img-3"></div>
-                    <h2>Dum spiro, spero.</h2>
-                    <blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
+                    <h2>Тренировки в нестандартных условиях</h2>
+                    <blockquote><p>Бой в тренировочном зале хорош для усвоения техники. Однако в реальных условиях добавляются ещё внешние факторы, которые могут существенно изменить как восприятие ситуации, так и её исход.</p></blockquote>
                 </div>
             </div>
             
             <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
                 <div class="sl-slide-inner">
                     <div class="bg-img bg-img-4"></div>
-                    <h2>Donna nobis pacem.</h2>
-                    <blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
+                    <h2>Летние занятия в парке</h2>
+                    <blockquote><p>Летом зал закрывается, и занятия проводятся в парке, на свежем воздухе.</p></blockquote>
                 </div>
             </div>
             
             <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
                 <div class="sl-slide-inner">
                     <div class="bg-img bg-img-5"></div>
-                    <h2>Acta Non Verba.</h2>
-                    <blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
+                    <h2>Открыто для всех    </h2>
+                    <blockquote><p>Конечно, самое главное - это коллектив. В группе тренируются и школьники, и взрослые отцы семейств, и юноши, и девушки.</p></blockquote>
                 </div>
             </div>
         </div>
 
         <nav id="nav-arrows" class="nav-arrows">
-            <span class="nav-arrow-prev">Previous</span>
-            <span class="nav-arrow-next">Next</span>
+            <span class="nav-arrow-prev">Назад</span>
+            <span class="nav-arrow-next">Вперед</span>
         </nav>
+    </div>
+
+<div class="container">    
+
+    <div class="row">
+        <div class="span12">
+            <h1>Федерация русского рукопашного боя Челябинской области</h1>
+            <p>
+                Наш сайт посвящен системе выживания А.А. Кадочникова, включающей в себя русский рукопашный бой по системе А.А. Кадочникова, собственно систему выживания (навыки ориентирования на местности и т.д.).
+            </p>
+            <p>
+                В нашей федерации русского рукопашного боя по системе А.А. Кадочникова работают инструкторы, постоянно проходящие стажировку у Алексея Алексеевича и Аркадия Алексеевича Кадочниковых. На сегодняшний момент занятия по русскому рукопашному бою проходят в двух местах Челябинска - в Центральном районе и на ЧМЗ.
+            </p>
+
+        </div>
     </div>
 </div>
 
 <script type="text/javascript">
 $(function() {
     (function init() {
-        var slider = $("#slider").slitslider();
+        var slider = $("#slider").slitslider({autoplay: true, interval: 4000});
         $(".nav-arrow-prev").on("click", function() {
             slider.next();
         });
@@ -69,3 +83,4 @@ $(function() {
     })();
 });
 </script>
+
