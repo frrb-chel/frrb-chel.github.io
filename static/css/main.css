@@ -49,10 +49,15 @@ footer {
     background: rgba(36, 73, 89, 0.5);
     border-top: 1px solid #DDD;
     padding: 20px 0;
+    margin-top: 20px;
 }
 
 footer strong {
     border-bottom: 1px solid rgba(30, 62, 77, 0.25);
     margin-bottom: 0.5em;
     display: inline-block;
+}
+
+footer strong a:hover {
+    text-decoration: none;
 }
