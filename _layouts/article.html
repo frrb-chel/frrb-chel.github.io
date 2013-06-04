@@ -5,6 +5,14 @@ layout: default
 <div class="container">
     <div class="row">
         <div class="span12">
+            <h1 class="page-header">{{ page.title }}</h1>
+            {% if page.menu %}
+            <div class="menu span4">
+                <h2>Содержание раздела</h2>
+                {% assign menu = page.menu %}
+                {% include submenu.html %}
+            </div>
+            {% endif %}
             {{ content }}
         </div>
     </div>

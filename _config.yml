@@ -1,5 +1,5 @@
 auto: true
 lsi: false
 pygments: true
-markdown: redcarpet
+markdown: maruku
 paginate: 5

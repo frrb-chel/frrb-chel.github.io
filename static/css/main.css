@@ -71,3 +71,8 @@ footer strong a:hover {
     margin: 8px 5px;
     padding: 0;
 }
+
+.menu {
+    float: right;
+    border-radius: 4px;
+}

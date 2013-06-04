@@ -1,0 +1,11 @@
+<ul class="nav nav-tabs nav-stacked">
+    {% for item in menu %}
+        <li>
+            <a href="{{item.url}}">{{ item.title }}</a>
+            {% if item.submenu %}
+                {% assign menu = item.submenu %}
+                {% include submenu.html %}
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
