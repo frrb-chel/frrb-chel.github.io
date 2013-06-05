@@ -1,5 +1,7 @@
 auto: true
 lsi: false
 pygments: true
-markdown: maruku
+markdown: rdiscount
+rdiscount:
+  extensions: [ footnotes ]
 paginate: 5
