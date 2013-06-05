@@ -72,6 +72,15 @@ footer strong a:hover {
     border-radius: 4px;
 }
 
+.menu h2 {
+    font-family: verdana;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(36, 73, 89);
+    text-shadow: 1px 1px 0px rgba(123, 149, 160, 0.7);
+    padding-left: 0.5em;
+}
+
 .thumbnail {
     background-color: rgba(255,255,255,0.5);
 }
