@@ -2,6 +2,4 @@ auto: true
 lsi: false
 pygments: true
 markdown: rdiscount
-rdiscount:
-  extensions: [ footnotes ]
 paginate: 5
