@@ -4,13 +4,12 @@ title: Наши фотографии
 ---
 
 <div class="container" ng-app="Fotki">
-    {% include alert.html %}
     {% raw %}
     <script type="text/ng-template" id="list.html">
     <h1 class="page-header">Фотоальбомы</h1>
     <div class="loading" ng-show="loading"></div>
     <ul class="thumbnails albums" data-grid>
-        <li class="span2" ng-repeat="album in albums" ng-show="album.imageCount > 0">
+        <li class="span2" ng-repeat="album in albums | orderBy : 'updated'" ng-show="album.imageCount > 0">
             <div class="thumbnail">
                 <img ng-src="{{album.img.S.href}}" />
                 <div class="caption">
